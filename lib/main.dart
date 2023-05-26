@@ -228,7 +228,7 @@ class BigCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: AnimatedSize(
-          duration: Duration(milliseconds: 200),
+          duration: Duration(milliseconds: 1000),
           // Make sure that the compound word wraps correctly when the window
           // is too narrow.
           child: MergeSemantics(
@@ -275,8 +275,8 @@ class FavoritesPage extends StatelessWidget {
           // Make better use of wide windows with a grid.
           child: GridView(
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-              maxCrossAxisExtent: 400,
-              childAspectRatio: 400 / 80,
+              maxCrossAxisExtent: 500,
+              childAspectRatio: 500 / 80,
             ),
             children: [
               for (var pair in appState.favorites)
